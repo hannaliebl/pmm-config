@@ -1,0 +1,34 @@
+templates:
+  Actor:
+    actor: tmdb
+    tmdb_person: <<person>>
+    tmdb_actor_details: <<person>>
+    sort_title: +_<<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+collections:
+  IMDB Top 250 Movies:
+    imdb_chart: top_movies
+    summary: IMDB Top 250 Movies
+    collection_order: custom
+    sync_mode: sync
+    sort_title: +1_Top Rated Movies
+  Middle Earth:
+    template:
+      {
+        name: tmdb,
+        collections: "119, 121938",
+        summary: "The Hobbit and the Lord of the Rings movies",
+        poster: https://theposterdb.com/api/assets/32987,
+      }
+  Star Wars:
+    template:
+      {
+        name: tmdb,
+        lists: 7102821,
+        collection_order: custom,
+        poster: https://theposterdb.com/api/assets/4448,
+      }
+  Vulture’s 101 Best Movie Endings:
+    letterboxd_list: https://letterboxd.com/brianformo/list/vultures-101-best-movie-endings/
