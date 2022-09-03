@@ -6,6 +6,25 @@ templates:
     sort_title: ++_<<collection_name>>
     sync_mode: sync
     collection_order: alpha
+  tmdb:
+    default:
+      collection_order: release
+    optional:
+      - collections
+      - lists
+      - movies
+      - tmdb_summary
+      - summary
+    tmdb_collection: <<collections>>
+    tmdb_list: <<lists>>
+    tmdb_movie: <<movies>>
+    tmdb_summary: <<tmdb_summary>>
+    summary: <<summary>>
+    url_poster: <<poster>>
+    sort_title: +2_<<collection_name>>
+    collection_order: <<collection_order>>
+    visible_home: true
+    visible_shared: true
 collections:
   IMDB Top 250 Movies:
     imdb_chart: top_movies
