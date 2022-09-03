@@ -1,12 +1,11 @@
 templates:
-  Actor:
-    actor: tmdb
-    tmdb_person: <<person>>
-    tmdb_actor_details: <<person>>
-    sort_title: +_<<collection_name>>
+  Studio:
+    optional:
+      - company
+    tmdb_company: <<company>>
+    sort_title: ++_<<collection_name>>
     sync_mode: sync
-    collection_order: release
-    collection_mode: hide
+    collection_order: alpha
 collections:
   IMDB Top 250 Movies:
     imdb_chart: top_movies
@@ -19,7 +18,7 @@ collections:
       {
         name: tmdb,
         collections: "119, 121938",
-        summary: "The Hobbit and the Lord of the Rings movies",
+        summary: "The Hobbit and the Lord of the Rings movies.",
         poster: https://theposterdb.com/api/assets/32987,
       }
   Star Wars:
@@ -30,5 +29,11 @@ collections:
         collection_order: custom,
         poster: https://theposterdb.com/api/assets/4448,
       }
+  Pixar:
+    template: { name: Studio, company: 3 }
+    summary: "Movies made by Pixar Animation Studios."
+  Studio Ghibli:
+    template: { name: Studio, company: 10342 }
+    summary: "Movies made by Studio Ghibli."
   Vulture’s 101 Best Movie Endings:
     letterboxd_list: https://letterboxd.com/brianformo/list/vultures-101-best-movie-endings/
