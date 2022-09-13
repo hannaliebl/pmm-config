@@ -27,7 +27,6 @@ templates:
     visible_home: true
     visible_shared: true
 collections:
-  collection_order: alpha
   Hanna's Watchlist:
     letterboxd_list: https://letterboxd.com/hannaliebl/watchlist/
   IMDB Top 250ish Movies:
