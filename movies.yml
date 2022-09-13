@@ -55,7 +55,7 @@ collections:
     template:
       {
         name: tmdb,
-        lists: "263, 948485",
+        collections: "263, 948485",
         summary: "Batman movies.",
         collection_order: release,
         poster: https://theposterdb.com/api/assets/2525,
