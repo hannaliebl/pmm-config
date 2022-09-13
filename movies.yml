@@ -53,12 +53,12 @@ collections:
       }
   Jurassic Park:
     template:
-    {
-      name: tmdb,
-      collections: 328,
-      summary: "Jurassic Park movies.",
-      poster: https://theposterdb.com/api/assets/34007,
-    }
+      {
+        name: tmdb,
+        collections: 328,
+        summary: "Jurassic Park movies.",
+        poster: https://theposterdb.com/api/assets/34007,
+      }
   Batman:
     template:
       {
