@@ -3,7 +3,7 @@ templates:
     optional:
       - company
     tmdb_company: <<company>>
-    sort_title: ++_<<collection_name>>
+    sort_title: <<collection_name>>
     sync_mode: sync
     url_poster: <<poster>>
     collection_order: alpha
@@ -22,11 +22,12 @@ templates:
     tmdb_summary: <<tmdb_summary>>
     summary: <<summary>>
     url_poster: <<poster>>
-    sort_title: +2_<<collection_name>>
+    sort_title: <<collection_name>>
     collection_order: <<collection_order>>
     visible_home: true
     visible_shared: true
 collections:
+  collection_order: alpha
   Hanna's Watchlist:
     letterboxd_list: https://letterboxd.com/hannaliebl/watchlist/
   IMDB Top 250ish Movies:
@@ -39,7 +40,7 @@ collections:
     template:
       {
         name: tmdb,
-        collections: "119, 121938",
+        collections: "121938, 119",
         summary: "The Hobbit and the Lord of the Rings movies.",
         poster: https://theposterdb.com/api/assets/32987,
       }
@@ -51,6 +52,14 @@ collections:
         collection_order: custom,
         poster: https://theposterdb.com/api/assets/4448,
       }
+  Jurassic Park:
+    template:
+    {
+      name: tmdb,
+      collections: 328,
+      summary: "Jurassic Park movies.",
+      poster: https://theposterdb.com/api/assets/34007,
+    }
   Batman:
     template:
       {
