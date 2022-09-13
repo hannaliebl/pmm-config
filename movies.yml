@@ -5,6 +5,7 @@ templates:
     tmdb_company: <<company>>
     sort_title: ++_<<collection_name>>
     sync_mode: sync
+    url_poster: <<poster>>
     collection_order: alpha
   tmdb:
     default:
@@ -26,11 +27,11 @@ templates:
     visible_home: true
     visible_shared: true
 collections:
-  Watchlist:
+  Hanna's Watchlist:
     letterboxd_list: https://letterboxd.com/hannaliebl/watchlist/
-  IMDB Top 250 Movies:
+  IMDB Top 250ish Movies:
     imdb_chart: top_movies
-    summary: IMDB Top 250 Movies
+    summary: "IMDB Top 250(ish) Movies"
     collection_order: custom
     sync_mode: sync
     sort_title: +1_Top Rated Movies
@@ -55,7 +56,8 @@ collections:
       {
         name: tmdb,
         lists: "263, 948485",
-        collection_order: custom,
+        summary: "Batman movies.",
+        collection_order: release,
         poster: https://theposterdb.com/api/assets/2525,
       }
   Pixar:
