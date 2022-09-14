@@ -49,11 +49,10 @@ templates:
 collections:
   Hanna's Watchlist:
     letterboxd_list: https://letterboxd.com/hannaliebl/watchlist/
-  IMDB Top 250:
+  IMDb Top 250:
     imdb_chart: top_movies
     url_poster: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Posters/Charts/Top_250.JPG
-    sort_title: +01_06_IMDB top 250
-    summary: Top movies of all time
+    summary: Top 250 user rated movies on IMDb
     collection_order: custom
     collection_mode: hide
   Wes Anderson:
