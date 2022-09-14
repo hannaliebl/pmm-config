@@ -55,7 +55,7 @@ collections:
     collection_order: custom
     sync_mode: sync
     collection_mode: hide
-    summary: "IMDb's top rated 250 movies...give or take a few.",
+    summary: "IMDb's top rated 250 movies...give or take a few."
   # German Movies:
   #   tmdb_discover:
   #     with_original_language: de
