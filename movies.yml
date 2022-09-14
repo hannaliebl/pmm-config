@@ -51,11 +51,10 @@ collections:
     letterboxd_list: https://letterboxd.com/hannaliebl/watchlist/
   IMDb Top 250ish Movies:
     imdb_chart: top_movies
-    summary: "IMDb Top 250(ish) Movies"
+    summary: "IMDb's Top 250(ish) movies...give or take a few."
     collection_order: custom
     sync_mode: sync
     collection_mode: hide
-    summary: "IMDb's top rated 250 movies...give or take a few."
   # German Movies:
   #   tmdb_discover:
   #     with_original_language: de
@@ -65,10 +64,10 @@ collections:
   # Wes Anderson:
   #   template: { name: Director, director: 5655 }
   Wes Anderson:
-      smart_filter:
-        all:
-          director: tmdb
-      tmdb_person: https://www.themoviedb.org/person/5655-wes-anderson
+    smart_filter:
+      all:
+        director: tmdb
+    tmdb_person: https://www.themoviedb.org/person/5655-wes-anderson
   Middle Earth:
     template:
       {
