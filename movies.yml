@@ -51,9 +51,11 @@ collections:
     letterboxd_list: https://letterboxd.com/hannaliebl/watchlist/
   IMDb Top 250 Movies:
     imdb_chart: top_movies
-    summary: "IMDb's top rated 250(ish) movies"
-    collection_order: custom
+    summary: IMDb's top rated 250 movies
     sync_mode: sync
+    url_poster: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Posters/Charts/Top_250.JPG
+    collection_order: custom
+    collection_mode: hide
   Wes Anderson:
     smart_filter:
       all:
