@@ -7,6 +7,26 @@ templates:
     sync_mode: sync
     url_poster: <<poster>>
     collection_order: alpha
+    collection_mode: hide
+  Director:
+    tmdb_person: <<person>>
+    sort_title: <<collection_name>>
+    collection_order: release
+    collection_mode: hide
+  Actor:
+    actor: tmdb
+    tmdb_person: <<person>>
+    tmdb_actor_details: <<person>>
+    sort_title: <<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
+  Genre:
+    smart_filter:
+      genre: <<genre>>
+      sort_by: audience_rating.desc
+    url_poster: <<poster>>
+    sort_title: <<collection_name>>
   tmdb:
     default:
       collection_order: release
@@ -34,7 +54,14 @@ collections:
     summary: "IMDB Top 250(ish) Movies"
     collection_order: custom
     sync_mode: sync
-    sort_title: +1_Top Rated Movies
+  # German Movies:
+  #   tmdb_discover:
+  #     with_original_language: de
+  #     sort_by: popularity.desc
+  #     limit: 500
+  #   summary: German movies
+  Wes Anderson:
+    template: { name: Director, director: 5655 }
   Middle Earth:
     template:
       {
@@ -86,3 +113,10 @@ collections:
     summary: "Movies made by Studio Ghibli."
   Vulture’s 101 Best Movie Endings:
     letterboxd_list: https://letterboxd.com/brianformo/list/vultures-101-best-movie-endings/
+  Documentary:
+    template:
+      {
+        name: Genre,
+        genre: Documentary,
+        poster: https://theposterdb.com/api/assets/51430,
+      }
