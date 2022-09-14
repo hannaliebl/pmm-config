@@ -49,20 +49,11 @@ templates:
 collections:
   Hanna's Watchlist:
     letterboxd_list: https://letterboxd.com/hannaliebl/watchlist/
-  IMDb Top 250ish Movies:
+  IMDb Top 250 Movies:
     imdb_chart: top_movies
-    summary: "IMDb's Top 250(ish) movies...give or take a few."
+    summary: "IMDb's top rated 250(ish) movies"
     collection_order: custom
     sync_mode: sync
-    collection_mode: hide
-  # German Movies:
-  #   tmdb_discover:
-  #     with_original_language: de
-  #     sort_by: popularity.desc
-  #     limit: 500
-  #   summary: German movies
-  # Wes Anderson:
-  #   template: { name: Director, director: 5655 }
   Wes Anderson:
     smart_filter:
       all:
