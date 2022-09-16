@@ -9,7 +9,7 @@ templates:
     collection_order: alpha
     collection_mode: hide
   Director:
-    tmdb_person: <<person>>
+    tmdb_director: <<director>>
     sort_title: <<collection_name>>
     collection_order: release
     collection_mode: hide
@@ -56,11 +56,14 @@ collections:
     summary: Top movies of all time
     collection_order: custom
     collection_mode: hide
-  Wes Anderson:
-    smart_filter:
-      all:
-        director: tmdb
-    tmdb_person: https://www.themoviedb.org/person/5655-wes-anderson
+  Cate Blanchett:
+    template: { name: Actor, person: 112 }
+  Rachel Weisz:
+    template: { name: Actor, person: 3293 }
+  Robin Williams:
+    template: { name: Actor, person: 2157 }
+  Directed by Wes Anderson:
+    template: { name: Director, director: 5655 }
   Middle Earth:
     template:
       {
@@ -112,6 +115,8 @@ collections:
     summary: "Movies made by Studio Ghibli."
   Vulture’s 101 Best Movie Endings:
     letterboxd_list: https://letterboxd.com/brianformo/list/vultures-101-best-movie-endings/
+  Letterboxd Top 250 Narrative Films:
+    letterboxd_list: https://letterboxd.com/dave/list/official-top-250-narrative-feature-films/
   Documentary:
     template:
       {
