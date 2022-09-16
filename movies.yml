@@ -3,30 +3,31 @@ templates:
     optional:
       - company
     tmdb_company: <<company>>
-    sort_title: <<collection_name>>
+    sort_title: ++6 <<collection_name>>
     sync_mode: sync
     url_poster: <<poster>>
     collection_order: alpha
-    collection_mode: hide
-  Director:
-    tmdb_director: <<director>>
-    sort_title: <<collection_name>>
-    collection_order: release
-    collection_mode: hide
-  Actor:
-    actor: tmdb
-    tmdb_person: <<person>>
-    tmdb_actor_details: <<person>>
-    sort_title: <<collection_name>>
-    sync_mode: sync
-    collection_order: release
     collection_mode: hide
   Genre:
     smart_filter:
       genre: <<genre>>
       sort_by: audience_rating.desc
     url_poster: <<poster>>
-    sort_title: <<collection_name>>
+    sort_title: ++7 <<collection_name>>
+  Director:
+    tmdb_director: <<director>>
+    sort_title: ++8 <<collection_name>>
+    collection_order: release
+    collection_mode: hide
+    sync_mode: sync
+  Actor:
+    actor: tmdb
+    tmdb_person: <<person>>
+    tmdb_actor_details: <<person>>
+    sort_title: ++9 <<collection_name>>
+    sync_mode: sync
+    collection_order: release
+    collection_mode: hide
   tmdb:
     default:
       collection_order: release
@@ -42,19 +43,30 @@ templates:
     tmdb_summary: <<tmdb_summary>>
     summary: <<summary>>
     url_poster: <<poster>>
-    sort_title: <<collection_name>>
+    sort_title: ++5 <<collection_name>>
     collection_order: <<collection_order>>
     visible_home: true
     visible_shared: true
 collections:
   Hanna's Watchlist:
     letterboxd_list: https://letterboxd.com/hannaliebl/watchlist/
+    sort_title: ++1 <<collection_name>>
   IMDB Top 250:
     imdb_chart: top_movies
     url_poster: https://raw.githubusercontent.com/bradmartti/Plex-Meta-Manager-Configs/master/bradmartti/Posters/Charts/Top_250.JPG
-    sort_title: IMDB Top 250
+    sort_title: ++2 <<collection_name>>
     summary: Top movies of all time
     collection_order: custom
+    collection_mode: hide
+  Letterboxd Top 250 Narrative Films:
+    letterboxd_list: https://letterboxd.com/dave/list/official-top-250-narrative-feature-films/
+    collection_order: custom
+    sort_title: ++3 <<collection_name>>
+    collection_mode: hide
+  Vulture’s 101 Best Movie Endings:
+    letterboxd_list: https://letterboxd.com/brianformo/list/vultures-101-best-movie-endings/
+    collection_order: custom
+    sort_title: ++4 <<collection_name>>
     collection_mode: hide
   Cate Blanchett:
     template: { name: Actor, person: 112 }
@@ -62,8 +74,13 @@ collections:
     template: { name: Actor, person: 3293 }
   Robin Williams:
     template: { name: Actor, person: 2157 }
-  Directed by Wes Anderson:
-    template: { name: Director, director: 5655 }
+  Wes Anderson:
+    template:
+      {
+        name: Director,
+        director: 5655,
+        poster: https://theposterdb.com/api/assets/222919,
+      }
   Middle Earth:
     template:
       {
@@ -113,10 +130,6 @@ collections:
         poster: https://theposterdb.com/api/assets/16569/,
       }
     summary: "Movies made by Studio Ghibli."
-  Vulture’s 101 Best Movie Endings:
-    letterboxd_list: https://letterboxd.com/brianformo/list/vultures-101-best-movie-endings/
-  Letterboxd Top 250 Narrative Films:
-    letterboxd_list: https://letterboxd.com/dave/list/official-top-250-narrative-feature-films/
   Documentary:
     template:
       {
