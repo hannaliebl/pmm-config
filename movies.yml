@@ -69,6 +69,10 @@ collections:
     collection_order: custom
     sort_title: ++4 <<collection_name>>
     collection_mode: hide
+  Lesbian Cinema Night:
+    letterboxd_list: https://letterboxd.com/hannaliebl/list/lesbian-cinema-night/by/reverse/
+    collection_order: custom
+    sort_title: ++4 <<collection_name>>
   Cate Blanchett:
     template: { name: Actor, person: 112 }
   Rachel Weisz:
