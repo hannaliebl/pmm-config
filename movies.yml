@@ -70,7 +70,7 @@ collections:
     sort_title: ++4 <<collection_name>>
     collection_mode: hide
   Lesbian Cinema Night:
-    letterboxd_list: https://letterboxd.com/hannaliebl/list/lesbian-cinema-night/by/reverse/
+    letterboxd_list: https://letterboxd.com/hannaliebl/list/lesbian-cinema-night/by/release/
     collection_order: custom
     sort_title: ++4 <<collection_name>>
   Cate Blanchett:
